@@ -1,0 +1,9 @@
+venv/
+iot-env/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+patients_data.json
+buffer.jsonl
+.env
