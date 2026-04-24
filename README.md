@@ -126,23 +126,24 @@ infection-detection-iot/
 
 ## 🚀 9. Installation
 
-##🔹 Cloud
-cd infection-detection-iot
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python cloud/cloud_api.py
+#🔹 Cloud
 
-##🔹 Raspberry Pi
-sudo apt update
-sudo apt install python3-pip python3-venv -y
+- cd infection-detection-edge-cloud
+- python3 -m venv venv
+- source venv/bin/activate
+- pip install -r requirements.txt
+- python cloud/cloud_api.py
 
-python3 -m venv ~/iot-env
-source ~/iot-env/bin/activate
-pip install requests
+#🔹 Raspberry Pi
 
-python edge/edge_device.py
-
+- sudo apt update
+- sudo apt install python3-pip python3-venv -y
+- cd infection-detection-edge-cloud
+- python3 -m venv ~/iot-env
+- source ~/iot-env/bin/activate
+- pip install requests
+- python edge/edge_device.py
+  
 ## 🌐 10. Configuration
 
 Dans edge_device.py :
@@ -150,6 +151,7 @@ Dans edge_device.py :
 CLOUD_URL = "http://IP_DU_CLOUD:5000/data"
 
 ## 📈 11. Fonctionnalités
+
 ✔ Multi-patients
 ✔ Dashboard interactif
 ✔ Graphiques d’évolution
@@ -160,6 +162,7 @@ CLOUD_URL = "http://IP_DU_CLOUD:5000/data"
 
 
 ## 🧪 12. Tests
+
 Test Edge → Cloud
 Test calcul du score
 Test dashboard
@@ -176,13 +179,15 @@ Le système permet :
 ✔ Tolérance aux pannes
 
 ## ⚠️ 14. Limites
-Capteurs simulés
-Score simplifié
-Stockage JSON
-HTTP (pas HTTPS)
-Pas de validation médicale
+
+- Capteurs simulés
+- Score simplifié
+- Stockage JSON
+- HTTP (pas HTTPS)
+- Pas de validation médicale
 
 ## 🔮 15. Améliorations futures
+
 🔬 Capteurs réels
 📡 MQTT
 🗄 Base de données
@@ -190,12 +195,13 @@ Pas de validation médicale
 🤖 Intelligence artificielle
 
 ## 📚 16. Références
+
 NEWS2 – Royal College of Physicians
 qSOFA – Sepsis-3
 Flask Documentation
 Raspberry Pi Documentation
 
-18. Avertissement!!!!
+## 18. Avertissement!!!!
 
 Ce projet est un prototype académique. Il ne constitue pas un dispositif médical réel et ne doit pas être utilisé pour prendre des décisions cliniques.
 
