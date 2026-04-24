@@ -163,11 +163,11 @@ CLOUD_URL = "http://IP_DU_CLOUD:5000/data"
 
 ## 🧪 12. Tests
 
-Test Edge → Cloud
-Test calcul du score
-Test dashboard
-Test panne Cloud
-Test sécurité
+- Test Edge → Cloud
+- Test calcul du score
+- Test dashboard
+- Test panne Cloud
+- Test sécurité
 
 ## 📊 13. Résultats
 
