@@ -66,6 +66,7 @@ Cloud Flask sur Kali Linux
       |-- Dashboard sécurisé
       |-- Alertes médicales
       |-- Vue globale et vue par patient
+
 4. Paramètres physiologiques surveillés
 
 Le système surveille les paramètres suivants :
@@ -77,6 +78,7 @@ SpO₂	Surveillance de l’oxygénation
 Fréquence respiratoire	Détection d’une respiration anormale
 Pression systolique	Détection d’une hypotension
 Confusion	Indicateur de dégradation neurologique
+
 5. Méthode de calcul du score
 
 Le score est inspiré de méthodes médicales comme NEWS2 et qSOFA, mais adapté de manière simplifiée pour ce prototype.
@@ -98,6 +100,7 @@ Score	Niveau de risque
 1	faible
 2	modéré
 ≥ 3	élevé
+
 6. Structure du projet
 infection-detection-iot/
 │
@@ -113,6 +116,7 @@ infection-detection-iot/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+
 7. Installation côté Cloud
 
 Sur la machine Cloud, par exemple Kali Linux :
@@ -133,6 +137,7 @@ http://IP_DU_CLOUD:5000/login
 Exemple :
 
 http://192.168.2.35:5000/login
+
 8. Installation côté Raspberry Pi
 
 Sur le Raspberry Pi :
@@ -151,6 +156,7 @@ Lancer le module Edge :
 cd ~/infection-detection-iot
 source ~/iot-env/bin/activate
 python edge/edge_device.py
+
 9. Configuration réseau
 
 Le Raspberry Pi et la machine Cloud doivent être sur le même réseau.
@@ -170,6 +176,7 @@ CLOUD_URL = "http://IP_DU_CLOUD:5000/data"
 Exemple :
 
 CLOUD_URL = "http://192.168.2.35:5000/data"
+
 10. Authentification et sécurité
 
 Le projet utilise deux niveaux de sécurité.
@@ -271,10 +278,12 @@ Test de sécurité
 Vérification que le dashboard n’est pas accessible sans authentification.
 
 15. Commandes utiles pour la démonstration
+
 Démarrer le Cloud
 cd ~/infection-detection-iot
 source venv/bin/activate
 python cloud/cloud_api.py
+
 Démarrer le Raspberry Pi Edge
 cd ~/infection-detection-iot
 source ~/iot-env/bin/activate
