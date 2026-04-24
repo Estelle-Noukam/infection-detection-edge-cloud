@@ -38,7 +38,7 @@ Le projet inclut :
 
 ## 3. Architecture du système
 
-```text
+text
 Patients simulés
       |
       v
