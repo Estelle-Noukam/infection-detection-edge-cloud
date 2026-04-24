@@ -110,8 +110,9 @@ Le Raspberry Pi envoie une clé API :
 ```python
 headers = {
   "X-API-KEY": API_KEY
-}
-🔸 Authentification utilisateur
+}```
+
+##🔸 Authentification utilisateur
 🔒 Page de login
 🔑 Mot de passe haché
 🍪 Session Flask
