@@ -38,34 +38,22 @@ Le projet inclut :
 
 ## 3. Architecture du système
 
-text
-Patients simulés
-      |
-      v
-Capteurs simulés
-(température, fréquence cardiaque, SpO₂,
-respiration, pression systolique, confusion)
-      |
-      v
-Raspberry Pi — Edge Device
-      |
-      |-- Simulation des données physiologiques
-      |-- Calcul local du score de risque
-      |-- Ajout du device_id
-      |-- Buffer local si Cloud indisponible
-      |
-      v
-Transmission HTTP REST / JSON
-      |
-      v
-Cloud Flask sur Kali Linux
-      |
-      |-- Authentification du Raspberry Pi
-      |-- Réception des données
-      |-- Stockage JSON
-      |-- Dashboard sécurisé
-      |-- Alertes médicales
-      |-- Vue globale et vue par patient
+# Configuration Raspberry Pi
+
+## Installation
+
+sudo apt update
+sudo apt install python3-pip python3-venv -y
+
+## Environnement
+
+python3 -m venv ~/iot-env
+source ~/iot-env/bin/activate
+pip install requests
+
+## Lancement
+
+python edge/edge_device.py
 
 4. Paramètres physiologiques surveillés
 
