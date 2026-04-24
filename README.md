@@ -111,22 +111,22 @@ L’accès au dashboard est sécurisé grâce à :
 
 
 ## 📁 8. Structure du projet
-infection-detection-iot/
-│
-├── cloud/
-│   └── cloud_api.py
-│
-├── edge/
-│   └── edge_device.py
-│
-├── config.example.json
-├── requirements.txt
-├── README.md
-└── .gitignore
+- infection-detection-iot/
+- │
+- ├── cloud/
+- │   └── cloud_api.py
+- │
+- ├── edge/
+- │   └── edge_device.py
+- │
+- ├── config.example.json
+- ├── requirements.txt
+- ├── README.md
+- └── .gitignore
 
 ## 🚀 9. Installation
 
-#🔹 Cloud
+### 🔹 Cloud
 
 - cd infection-detection-edge-cloud
 - python3 -m venv venv
@@ -134,7 +134,7 @@ infection-detection-iot/
 - pip install -r requirements.txt
 - python cloud/cloud_api.py
 
-#🔹 Raspberry Pi
+### 🔹 Raspberry Pi
 
 - sudo apt update
 - sudo apt install python3-pip python3-venv -y
@@ -152,13 +152,13 @@ CLOUD_URL = "http://IP_DU_CLOUD:5000/data"
 
 ## 📈 11. Fonctionnalités
 
-✔ Multi-patients
-✔ Dashboard interactif
-✔ Graphiques d’évolution
-✔ Filtrage par période
-✔ Alertes médicales
-✔ Buffer local
-✔ Resynchronisation automatique
+- ✔ Multi-patients
+- ✔ Dashboard interactif
+- ✔ Graphiques d’évolution
+- ✔ Filtrage par période
+- ✔ Alertes médicales
+- ✔ Buffer local
+- ✔ Resynchronisation automatique
 
 
 ## 🧪 12. Tests
@@ -173,10 +173,10 @@ CLOUD_URL = "http://IP_DU_CLOUD:5000/data"
 
 Le système permet :
 
-✔ Détection d’anomalies
-✔ Surveillance en temps réel
-✔ Visualisation claire
-✔ Tolérance aux pannes
+- ✔ Détection d’anomalies
+- ✔ Surveillance en temps réel
+- ✔ Visualisation claire
+- ✔ Tolérance aux pannes
 
 ## ⚠️ 14. Limites
 
@@ -188,21 +188,21 @@ Le système permet :
 
 ## 🔮 15. Améliorations futures
 
-🔬 Capteurs réels
-📡 MQTT
-🗄 Base de données
-🔐 HTTPS
-🤖 Intelligence artificielle
+- 🔬 Capteurs réels
+- 📡 MQTT
+- 🗄 Base de données
+- 🔐 HTTPS
+- 🤖 Intelligence artificielle
 
 ## 📚 16. Références
 
-NEWS2 – Royal College of Physicians
-qSOFA – Sepsis-3
-Flask Documentation
-Raspberry Pi Documentation
+- NEWS2 – Royal College of Physicians
+- qSOFA – Sepsis-3
+- Flask Documentation
+- Raspberry Pi Documentation
 
 ## 18. Avertissement!!!!
 
-Ce projet est un prototype académique. Il ne constitue pas un dispositif médical réel et ne doit pas être utilisé pour prendre des décisions cliniques.
+### Ce projet est un prototype académique. Il ne constitue pas un dispositif médical réel et ne doit pas être utilisé pour prendre des décisions cliniques.
 
-Les données patients utilisées sont fictives et générées uniquement à des fins de démonstration.
+### Les données patients utilisées sont fictives et générées uniquement à des fins de démonstration.
