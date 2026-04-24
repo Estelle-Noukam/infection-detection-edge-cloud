@@ -105,18 +105,20 @@ Le score est inspiré de **NEWS2** et **qSOFA**.
 
 ### 🔸 Authentification Edge
 
-Le Raspberry Pi envoie une clé API :
+Le Raspberry Pi s’authentifie auprès du serveur Cloud en envoyant une **clé API** dans les requêtes HTTP.  
+Cette clé permet de vérifier que les données proviennent bien d’un dispositif autorisé.
 
-```python
-headers = {
-  "X-API-KEY": API_KEY
-          }
+---
 
-##🔸 Authentification utilisateur
-🔒 Page de login
-🔑 Mot de passe haché
-🍪 Session Flask
-👤 Rôles (admin, clinician)
+### 🔸 Authentification utilisateur
+
+L’accès au dashboard est sécurisé grâce à :
+
+- 🔒 Une page de connexion  
+- 🔑 Des mots de passe hachés  
+- 🍪 Une gestion de session avec Flask  
+- 👤 Des rôles utilisateurs (admin, clinician)  
+
 
 ## 📁 8. Structure du projet
 infection-detection-iot/
