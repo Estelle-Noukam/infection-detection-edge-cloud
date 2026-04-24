@@ -1,0 +1,6 @@
+{
+  "cloud_url": "http://IP_DU_CLOUD:5000/data",
+  "device_id": "raspberry_pi_01",
+  "api_key": "CHANGE_ME",
+  "device_role": "edge_device"
+}

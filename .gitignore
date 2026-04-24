@@ -4,6 +4,8 @@ __pycache__/
 *.pyc
 *.pyo
 *.log
-patients_data.json
-buffer.jsonl
 .env
+patients_data.json
+alerts.json
+pending_data.json
+config.json
