@@ -29,17 +29,7 @@ Le système repose sur :
 
 ## 🧠 3. Architecture du système
 
-
-Capteurs simulés
-↓
-Raspberry Pi (Edge)
-↓
-API REST (HTTP / JSON)
-↓
-Serveur Cloud (Flask)
-↓
-Dashboard Web
-
+<img width="792" height="465" alt="image" src="https://github.com/user-attachments/assets/fd91bbdc-d9c2-4ec1-8a03-8bb4999f485f" />
 
 ---
 
@@ -167,6 +157,7 @@ CLOUD_URL = "http://IP_DU_CLOUD:5000/data"
 ✔ Alertes médicales
 ✔ Buffer local
 ✔ Resynchronisation automatique
+
 
 ## 🧪 12. Tests
 Test Edge → Cloud
